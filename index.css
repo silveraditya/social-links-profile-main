@@ -54,19 +54,19 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: var(--Grey-800);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     text-align: center;
-    width: 384px;
+    width: 24rem;
 }
 
 .profile__image {
-    padding: 40px 0px 24px 0px;
+    padding: 2.5rem 0rem 1.5rem 0rem;
 }
 
 .profile img {
-    width: 88px;
-    height: 88px;
-    border-radius: 999px;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
 }
 
 .profile__name {
@@ -84,7 +84,7 @@ body {
     font-family: Inter;
     font-weight: bold;
     line-height: 1.5;
-    padding-top: 4px;
+    padding-top: 0.25rem;
     
 }
 
@@ -93,8 +93,8 @@ body {
     font-size: 0.875rem;
     font-family: Inter;
     line-height: 1.5;
-    padding-top: 24px;
-    padding-bottom: 8px;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .profile__link {
@@ -109,10 +109,10 @@ button, a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 304px;
-    height: 45px;
+    width: 19rem;
+    height: 2.8125rem;
     background-color: var(--Grey-700);
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
 }
 
@@ -139,7 +139,7 @@ a {
 
 @media (min-width: 320px) and (max-width: 599px) {
     .profile {
-        width: 327px;
+        width: 20.4375rem;
     }
     .profile__link-spacing {
         margin-bottom: 1.5rem;
@@ -148,7 +148,7 @@ a {
 
 @media (min-width: 600px) and (max-width: 1200px) {
     .profile {
-        width: 456px;
+        width: 28.5rem;
     }
 }
 
