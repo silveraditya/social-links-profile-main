@@ -1,0 +1,154 @@
+:root {
+    /* colors */
+    --Grey-900: hsl(0,0%,8%);
+    --Grey-800: hsl(0,0%,12%);
+    --Grey-700: hsl(0,0%,20%);
+    --Green: hsl(75,94%,57%);
+    --White: hsl(0,0%,100%);
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(./assets/fonts/static/Inter-Regular.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-display: swap;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Grey-900);
+    height: 100vh;
+    
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Grey-800);
+    border-radius: 12px;
+    text-align: center;
+    width: 384px;
+}
+
+.profile__image {
+    padding: 40px 0px 24px 0px;
+}
+
+.profile img {
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+}
+
+.profile__name {
+    color: var(--White);
+    font-family: Inter-SemiBold, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    
+
+}
+
+.profile__location {
+    color: var(--Green);
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: 4px;
+    
+}
+
+.profile__desc {
+    color: var(--White);
+    font-size: 0.875rem;
+    font-family: Inter;
+    line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.profile__link {
+    margin: 1rem;
+}
+
+button, a {
+    all: unset;
+}
+
+.profile__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 304px;
+    height: 45px;
+    background-color: var(--Grey-700);
+    border-radius: 8px;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+    font-family: Inter-Bold, sans-serif;
+    font-weight: 0.875rem;
+    line-height: 1.5; 
+}
+
+.profile__link-spacing {
+    margin-bottom: 2.5rem;
+}
+
+.profile__link:hover {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+    cursor: pointer;
+    caret-color: var(--Grey-900);
+
+
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+    .profile {
+        width: 327px;
+    }
+    .profile__link-spacing {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .profile {
+        width: 456px;
+    }
+}
+
